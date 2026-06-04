@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { generateLottoNumbers } from '../utils/lotto'
+import { generateLottoNumbers, GAME_LABELS } from '../utils/lotto'
 import GameCountSelector from './GameCountSelector'
 import LottoTicket from './LottoTicket'
 
@@ -7,8 +7,6 @@ interface GeneratorPanelProps {
   currentGames: number[][]
   onGenerate: (games: number[][]) => void
 }
-
-const GAME_LABELS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 
 export default function GeneratorPanel({ currentGames, onGenerate }: GeneratorPanelProps) {
   const [gameCount, setGameCount] = useState(5)

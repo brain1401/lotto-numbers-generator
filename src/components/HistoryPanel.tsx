@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { LottoEntry } from '../types'
+import { GAME_LABELS } from '../utils/lotto'
 import LottoTicket from './LottoTicket'
 
 interface HistoryPanelProps {
@@ -7,8 +8,6 @@ interface HistoryPanelProps {
   onDeleteEntry: (id: string) => void
   onClearAll: () => void
 }
-
-const GAME_LABELS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 
 function formatDate(ts: number): string {
   return new Date(ts).toLocaleString('ko-KR', {
