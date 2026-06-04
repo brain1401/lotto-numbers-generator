@@ -9,7 +9,7 @@ export default function GameCountSelector({ count, onChange }: GameCountSelector
       <span className="text-sm text-gray-600 font-medium">게임 수</span>
       <div className="flex items-center gap-3">
         <button
-          aria-label="-"
+          aria-label="게임 수 감소"
           onClick={() => onChange(count - 1)}
           disabled={count <= 1}
           className="w-8 h-8 rounded-full border border-gray-300 text-gray-700 font-bold hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
@@ -20,7 +20,7 @@ export default function GameCountSelector({ count, onChange }: GameCountSelector
           {count}
         </span>
         <button
-          aria-label="+"
+          aria-label="게임 수 증가"
           onClick={() => onChange(count + 1)}
           disabled={count >= 10}
           className="w-8 h-8 rounded-full border border-gray-300 text-gray-700 font-bold hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
