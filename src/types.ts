@@ -1,5 +1,5 @@
 export interface LottoEntry {
-  id: string
-  timestamp: number
-  games: number[][]
+  id: string;
+  timestamp: number;
+  games: number[][];
 }
