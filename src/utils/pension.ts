@@ -1,4 +1,4 @@
-import { getUnbiasedRandom } from './lotto';
+import { getUnbiasedRandom } from './random';
 
 export function generatePensionNumber(): { group: number; digits: string } {
   const group = getUnbiasedRandom(5) + 1;
