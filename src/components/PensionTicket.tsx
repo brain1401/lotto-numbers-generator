@@ -5,7 +5,12 @@ interface PensionTicketProps {
   animate?: boolean;
 }
 
-export default function PensionTicket({ group, digits, label, animate = false }: PensionTicketProps) {
+export default function PensionTicket({
+  group,
+  digits,
+  label,
+  animate = false,
+}: PensionTicketProps) {
   return (
     <div className="bg-ds-surface rounded-xl p-4 space-y-2.5">
       {label && <p className="text-xs font-medium text-ds-muted">{label}</p>}

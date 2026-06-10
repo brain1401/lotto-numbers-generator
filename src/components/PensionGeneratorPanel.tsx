@@ -10,7 +10,10 @@ interface PensionGeneratorPanelProps {
   onGenerate: (games: PensionGame[]) => void;
 }
 
-export default function PensionGeneratorPanel({ currentGames, onGenerate }: PensionGeneratorPanelProps) {
+export default function PensionGeneratorPanel({
+  currentGames,
+  onGenerate,
+}: PensionGeneratorPanelProps) {
   const [gameCount, setGameCount] = useState(5);
   const [generationKey, setGenerationKey] = useState(0);
 
