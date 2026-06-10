@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { generatePensionNumber } from '../utils/pension';
+import { GAME_LABELS } from '../utils/lotto';
 import type { PensionGame } from '../types';
 import GameCountSelector from './GameCountSelector';
 import PensionTicket from './PensionTicket';
-
-const GAME_LABELS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'] as const;
 
 interface PensionGeneratorPanelProps {
   currentGames: PensionGame[];

@@ -1,8 +1,7 @@
 import { useState } from 'react';
+import { GAME_LABELS } from '../utils/lotto';
 import type { PensionEntry } from '../types';
 import PensionTicket from './PensionTicket';
-
-const GAME_LABELS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'] as const;
 
 interface PensionHistoryPanelProps {
   history: PensionEntry[];
