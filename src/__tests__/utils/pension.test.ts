@@ -28,7 +28,15 @@ describe('generatePensionNumber', () => {
   });
 
   it('앞자리 0이 zero-pad로 보존되어야 한다', () => {
-    const result = generatePensionNumber();
-    expect(result.digits).toHaveLength(6);
+    let foundLeadingZero = false;
+    for (let i = 0; i < 2000; i++) {
+      const { digits } = generatePensionNumber();
+      if (digits.startsWith('0')) {
+        foundLeadingZero = true;
+        expect(digits).toHaveLength(6);
+        break;
+      }
+    }
+    expect(foundLeadingZero).toBe(true);
   });
 });
