@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header, { type TabType } from './components/Header';
+import FairnessNotice from './components/FairnessNotice';
 import GeneratorPanel from './components/GeneratorPanel';
 import HistoryPanel from './components/HistoryPanel';
 import PensionGeneratorPanel from './components/PensionGeneratorPanel';
@@ -42,6 +43,7 @@ export default function App() {
     <div className="min-h-screen bg-ds-bg">
       <Header activeTab={activeTab} onTabChange={setActiveTab} />
       <main className="max-w-4xl mx-auto px-4 py-8 space-y-10">
+        <FairnessNotice lottery={activeTab} />
         {activeTab === 'lotto' ? (
           <>
             <GeneratorPanel currentGames={currentGames} onGenerate={handleGenerate} />
