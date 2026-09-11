@@ -1,97 +1,127 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-04T10:45:00.000Z",
-  "title": "Design System: 로또 번호 생성기",
+  "generatedAt": "2026-09-11T13:30:14.227Z",
+  "title": "Design System: 복권 번호 생성기",
   "extensions": {
     "colorMeta": {
       "primary": {
         "role": "primary",
         "displayName": "코발트 인디고",
-        "canonical": "oklch(0.55 0.105 230)",
+        "canonical": "oklch(0.51 0.105 230)",
         "tonalRamp": [
           "oklch(0.15 0.105 230)",
           "oklch(0.24 0.105 230)",
           "oklch(0.33 0.105 230)",
           "oklch(0.42 0.105 230)",
-          "oklch(0.55 0.105 230)",
-          "oklch(0.65 0.095 230)",
-          "oklch(0.76 0.075 230)",
-          "oklch(0.90 0.045 230)"
+          "oklch(0.51 0.105 230)",
+          "oklch(0.63 0.095 230)",
+          "oklch(0.76 0.07 230)",
+          "oklch(0.92 0.035 230)"
         ]
       },
       "primary-hover": {
         "role": "primary",
-        "displayName": "라이트 코발트",
-        "canonical": "oklch(0.61 0.105 230)",
+        "displayName": "딥 코발트",
+        "canonical": "oklch(0.47 0.105 230)",
         "tonalRamp": [
-          "oklch(0.18 0.105 230)",
-          "oklch(0.28 0.105 230)",
+          "oklch(0.13 0.105 230)",
+          "oklch(0.22 0.105 230)",
+          "oklch(0.30 0.105 230)",
           "oklch(0.38 0.105 230)",
-          "oklch(0.48 0.105 230)",
-          "oklch(0.61 0.105 230)",
-          "oklch(0.70 0.090 230)",
-          "oklch(0.80 0.065 230)",
-          "oklch(0.92 0.035 230)"
+          "oklch(0.47 0.105 230)",
+          "oklch(0.60 0.095 230)",
+          "oklch(0.74 0.07 230)",
+          "oklch(0.91 0.035 230)"
         ]
       },
       "bg": {
         "role": "neutral",
         "displayName": "미드나이트 블랙",
-        "canonical": "oklch(0.09 0.000 0)",
+        "canonical": "oklch(0.09 0 0)",
         "tonalRamp": [
-          "oklch(0.04 0.000 0)",
-          "oklch(0.09 0.000 0)",
-          "oklch(0.13 0.000 0)",
-          "oklch(0.17 0.000 0)",
-          "oklch(0.25 0.000 0)",
-          "oklch(0.40 0.000 0)",
-          "oklch(0.62 0.000 0)",
-          "oklch(0.85 0.000 0)"
+          "oklch(0.05 0 0)",
+          "oklch(0.09 0 0)",
+          "oklch(0.13 0 0)",
+          "oklch(0.17 0 0)",
+          "oklch(0.21 0 0)",
+          "oklch(0.40 0 0)",
+          "oklch(0.68 0 0)",
+          "oklch(0.95 0 0)"
         ]
       },
       "surface": {
         "role": "neutral",
         "displayName": "다크 서피스",
-        "canonical": "oklch(0.13 0.000 0)",
+        "canonical": "oklch(0.13 0 0)",
         "tonalRamp": [
-          "oklch(0.06 0.000 0)",
-          "oklch(0.09 0.000 0)",
-          "oklch(0.13 0.000 0)",
-          "oklch(0.17 0.000 0)",
-          "oklch(0.25 0.000 0)",
-          "oklch(0.40 0.000 0)",
-          "oklch(0.62 0.000 0)",
-          "oklch(0.85 0.000 0)"
+          "oklch(0.05 0 0)",
+          "oklch(0.09 0 0)",
+          "oklch(0.13 0 0)",
+          "oklch(0.17 0 0)",
+          "oklch(0.21 0 0)",
+          "oklch(0.40 0 0)",
+          "oklch(0.68 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "레이즈드 패널",
+        "canonical": "oklch(0.17 0 0)",
+        "tonalRamp": [
+          "oklch(0.05 0 0)",
+          "oklch(0.09 0 0)",
+          "oklch(0.13 0 0)",
+          "oklch(0.17 0 0)",
+          "oklch(0.21 0 0)",
+          "oklch(0.40 0 0)",
+          "oklch(0.68 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "서브틀 보더",
+        "canonical": "oklch(0.21 0 0)",
+        "tonalRamp": [
+          "oklch(0.05 0 0)",
+          "oklch(0.09 0 0)",
+          "oklch(0.13 0 0)",
+          "oklch(0.17 0 0)",
+          "oklch(0.21 0 0)",
+          "oklch(0.30 0 0)",
+          "oklch(0.68 0 0)",
+          "oklch(0.95 0 0)"
         ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "화이트 잉크",
-        "canonical": "oklch(0.95 0.000 0)",
+        "canonical": "oklch(0.95 0 0)",
         "tonalRamp": [
-          "oklch(0.20 0.000 0)",
-          "oklch(0.35 0.000 0)",
-          "oklch(0.50 0.000 0)",
-          "oklch(0.65 0.000 0)",
-          "oklch(0.78 0.000 0)",
-          "oklch(0.87 0.000 0)",
-          "oklch(0.93 0.000 0)",
-          "oklch(0.95 0.000 0)"
+          "oklch(0.20 0 0)",
+          "oklch(0.35 0 0)",
+          "oklch(0.50 0 0)",
+          "oklch(0.62 0 0)",
+          "oklch(0.74 0 0)",
+          "oklch(0.84 0 0)",
+          "oklch(0.91 0 0)",
+          "oklch(0.95 0 0)"
         ]
       },
-      "ink-muted": {
+      "muted": {
         "role": "neutral",
         "displayName": "뮤트 그레이",
-        "canonical": "oklch(0.55 0.000 0)",
+        "canonical": "oklch(0.68 0 0)",
         "tonalRamp": [
-          "oklch(0.25 0.000 0)",
-          "oklch(0.35 0.000 0)",
-          "oklch(0.45 0.000 0)",
-          "oklch(0.55 0.000 0)",
-          "oklch(0.65 0.000 0)",
-          "oklch(0.75 0.000 0)",
-          "oklch(0.85 0.000 0)",
-          "oklch(0.93 0.000 0)"
+          "oklch(0.25 0 0)",
+          "oklch(0.35 0 0)",
+          "oklch(0.45 0 0)",
+          "oklch(0.56 0 0)",
+          "oklch(0.68 0 0)",
+          "oklch(0.77 0 0)",
+          "oklch(0.86 0 0)",
+          "oklch(0.94 0 0)"
         ]
       },
       "destructive": {
@@ -102,128 +132,218 @@
           "oklch(0.22 0.18 25)",
           "oklch(0.32 0.18 25)",
           "oklch(0.42 0.18 25)",
-          "oklch(0.52 0.18 25)",
+          "oklch(0.53 0.18 25)",
           "oklch(0.65 0.18 25)",
-          "oklch(0.73 0.15 25)",
-          "oklch(0.82 0.10 25)",
-          "oklch(0.93 0.05 25)"
+          "oklch(0.74 0.14 25)",
+          "oklch(0.83 0.09 25)",
+          "oklch(0.93 0.045 25)"
+        ]
+      },
+      "destructive-tint": {
+        "role": "semantic",
+        "displayName": "레드 틴트",
+        "canonical": "oklch(0.65 0.18 25 / 0.12)",
+        "tonalRamp": [
+          "oklch(0.65 0.18 25 / 0.04)",
+          "oklch(0.65 0.18 25 / 0.08)",
+          "oklch(0.65 0.18 25 / 0.12)",
+          "oklch(0.65 0.18 25 / 0.18)",
+          "oklch(0.65 0.18 25 / 0.26)",
+          "oklch(0.65 0.18 25 / 0.36)",
+          "oklch(0.65 0.18 25 / 0.5)",
+          "oklch(0.65 0.18 25 / 0.7)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "포커스 코발트",
+        "canonical": "oklch(0.72 0.1 230)",
+        "tonalRamp": [
+          "oklch(0.18 0.1 230)",
+          "oklch(0.28 0.1 230)",
+          "oklch(0.38 0.1 230)",
+          "oklch(0.48 0.1 230)",
+          "oklch(0.60 0.1 230)",
+          "oklch(0.72 0.1 230)",
+          "oklch(0.83 0.07 230)",
+          "oklch(0.93 0.035 230)"
         ]
       },
       "ball-yellow": {
         "role": "lotto-constraint",
-        "displayName": "선라이즈 옐로 (번호 1-10)",
+        "displayName": "선라이즈 옐로 (번호 1–10)",
         "canonical": "oklch(0.852 0.199 100)",
         "tonalRamp": [
-          "oklch(0.45 0.199 100)",
-          "oklch(0.55 0.199 100)",
-          "oklch(0.64 0.199 100)",
-          "oklch(0.72 0.199 100)",
+          "oklch(0.45 0.12 100)",
+          "oklch(0.55 0.15 100)",
+          "oklch(0.65 0.18 100)",
+          "oklch(0.75 0.19 100)",
           "oklch(0.852 0.199 100)",
-          "oklch(0.90 0.140 100)",
-          "oklch(0.94 0.090 100)",
+          "oklch(0.90 0.14 100)",
+          "oklch(0.94 0.09 100)",
           "oklch(0.97 0.045 100)"
         ]
       },
       "ball-blue": {
         "role": "lotto-constraint",
-        "displayName": "로얄 블루 (번호 11-20)",
+        "displayName": "로얄 블루 (번호 11–20)",
         "canonical": "oklch(0.623 0.214 259)",
         "tonalRamp": [
-          "oklch(0.20 0.214 259)",
-          "oklch(0.30 0.214 259)",
-          "oklch(0.42 0.214 259)",
-          "oklch(0.52 0.214 259)",
+          "oklch(0.22 0.12 259)",
+          "oklch(0.32 0.17 259)",
+          "oklch(0.42 0.2 259)",
+          "oklch(0.52 0.21 259)",
           "oklch(0.623 0.214 259)",
-          "oklch(0.72 0.160 259)",
-          "oklch(0.82 0.100 259)",
-          "oklch(0.93 0.050 259)"
+          "oklch(0.72 0.16 259)",
+          "oklch(0.82 0.1 259)",
+          "oklch(0.93 0.05 259)"
         ]
       },
       "ball-red": {
         "role": "lotto-constraint",
-        "displayName": "크림슨 레드 (번호 21-30)",
+        "displayName": "크림슨 레드 (번호 21–30)",
         "canonical": "oklch(0.626 0.258 29)",
         "tonalRamp": [
-          "oklch(0.20 0.258 29)",
-          "oklch(0.30 0.258 29)",
-          "oklch(0.42 0.258 29)",
-          "oklch(0.52 0.258 29)",
+          "oklch(0.22 0.12 29)",
+          "oklch(0.32 0.17 29)",
+          "oklch(0.42 0.21 29)",
+          "oklch(0.52 0.24 29)",
           "oklch(0.626 0.258 29)",
-          "oklch(0.72 0.190 29)",
-          "oklch(0.82 0.120 29)",
-          "oklch(0.93 0.060 29)"
+          "oklch(0.72 0.19 29)",
+          "oklch(0.82 0.12 29)",
+          "oklch(0.93 0.06 29)"
         ]
       },
       "ball-gray": {
         "role": "lotto-constraint",
-        "displayName": "실버 그레이 (번호 31-40)",
+        "displayName": "실버 그레이 (번호 31–40)",
         "canonical": "oklch(0.704 0.015 252)",
         "tonalRamp": [
           "oklch(0.25 0.015 252)",
           "oklch(0.35 0.015 252)",
           "oklch(0.46 0.015 252)",
-          "oklch(0.57 0.015 252)",
+          "oklch(0.58 0.015 252)",
           "oklch(0.704 0.015 252)",
-          "oklch(0.79 0.010 252)",
+          "oklch(0.79 0.01 252)",
           "oklch(0.87 0.007 252)",
           "oklch(0.95 0.003 252)"
         ]
       },
       "ball-green": {
         "role": "lotto-constraint",
-        "displayName": "에메랄드 그린 (번호 41-45)",
+        "displayName": "에메랄드 그린 (번호 41–45)",
         "canonical": "oklch(0.723 0.219 149)",
         "tonalRamp": [
-          "oklch(0.22 0.219 149)",
-          "oklch(0.32 0.219 149)",
-          "oklch(0.44 0.219 149)",
-          "oklch(0.56 0.219 149)",
+          "oklch(0.25 0.1 149)",
+          "oklch(0.35 0.14 149)",
+          "oklch(0.46 0.18 149)",
+          "oklch(0.59 0.21 149)",
           "oklch(0.723 0.219 149)",
-          "oklch(0.80 0.160 149)",
-          "oklch(0.87 0.100 149)",
-          "oklch(0.94 0.050 149)"
+          "oklch(0.80 0.16 149)",
+          "oklch(0.87 0.1 149)",
+          "oklch(0.94 0.05 149)"
+        ]
+      },
+      "ball-ink": {
+        "role": "lotto-constraint",
+        "displayName": "다크 볼 잉크",
+        "canonical": "oklch(0.2 0 0)",
+        "tonalRamp": [
+          "oklch(0.10 0 0)",
+          "oklch(0.15 0 0)",
+          "oklch(0.20 0 0)",
+          "oklch(0.30 0 0)",
+          "oklch(0.45 0 0)",
+          "oklch(0.60 0 0)",
+          "oklch(0.78 0 0)",
+          "oklch(0.92 0 0)"
         ]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "앱 타이틀. 페이지 전체에 한 번만." },
-      "title": { "displayName": "Title", "purpose": "섹션 헤딩. 생성 기록 같은 구역 시작점." },
-      "body": { "displayName": "Body", "purpose": "부제, 설명 텍스트. 최대 65ch." },
-      "label": { "displayName": "Label", "purpose": "게임 레이블, 버튼 텍스트, 날짜, 보조 UI." },
-      "number": { "displayName": "Number", "purpose": "번호 공 숫자. tabular-nums 필수." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "헤더의 앱 타이틀. 페이지 전체에 한 번만."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "게임 수 스테퍼의 카운터 숫자. tabular."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "탭, '게임 수' 레이블, 한 줄 상태 텍스트."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "'번호 생성' 버튼 한 곳."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "공정성 안내의 설명 본문. 새 장문은 65ch 안쪽."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "게임 레이블(500). 같은 크기의 날짜·삭제·각주는 400."
+      },
+      "ball-number": {
+        "displayName": "Ball Number",
+        "purpose": "번호 공 숫자. 20px bold — 블루·레드 공 흰 숫자의 큰 텍스트 대비 기준. 줄이지 않는다."
+      },
+      "number": {
+        "displayName": "Number",
+        "purpose": "연금 숫자 칸, 조 배지. tabular 필수."
+      }
     },
     "shadows": [
       {
         "name": "focus-ring",
-        "value": "0 0 0 2px oklch(0.55 0.105 230 / 0.6)",
-        "purpose": "모든 인터랙티브 요소의 키보드 포커스 상태. 코발트 인디고 60% 불투명."
+        "value": "0 0 0 2px var(--ds-focus)",
+        "purpose": "키보드 포커스 전용. focus-visible-ring 유틸리티로 모든 인터랙티브 요소에 적용."
       }
     ],
     "motion": [
       {
-        "name": "ease-state",
-        "value": "cubic-bezier(0.25, 0, 0.1, 1)",
-        "purpose": "버튼/컨트롤 hover, 색상 상태 전환. 150ms."
-      },
-      {
-        "name": "ease-content",
-        "value": "cubic-bezier(0.25, 0, 0.1, 1)",
-        "purpose": "새 번호 등장, 기록 항목 표시. 200ms."
-      },
-      {
-        "name": "duration-fast",
+        "name": "duration-state",
         "value": "150ms",
-        "purpose": "버튼 hover, 색상 피드백."
+        "purpose": "버튼·탭·스테퍼의 색 상태 전환 (Tailwind 기본 ease)."
       },
       {
-        "name": "duration-standard",
+        "name": "ease-state",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "상태 전환 기본 이징 (Tailwind 기본값)."
+      },
+      {
+        "name": "duration-enter",
+        "value": "160ms",
+        "purpose": "번호 공·연금 숫자 칸 등장."
+      },
+      {
+        "name": "ease-enter",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "등장 이징. 빠르게 나와 부드럽게 멈춘다. opacity 0 + scale 0.55 → 1."
+      },
+      {
+        "name": "stagger-ball",
+        "value": "40ms",
+        "purpose": "로또 공 사이 등장 지연 (6개, 0–200ms)."
+      },
+      {
+        "name": "stagger-digit",
+        "value": "35ms",
+        "purpose": "연금 숫자 칸 사이 등장 지연 (6개, 0–175ms)."
+      },
+      {
+        "name": "duration-disclosure",
         "value": "200ms",
-        "purpose": "컨텐츠 등장, 구역 전환."
+        "purpose": "Collapsible 열림(페이드 + 위에서 4px 슬라이드), 셰브런 180° 회전."
       }
     ],
     "breakpoints": [
-      { "name": "sm", "value": "640px", "purpose": "모바일/태블릿 분기. 티켓 그리드 1→2열." },
-      { "name": "lg", "value": "1024px", "purpose": "데스크톱. 티켓 그리드 2→3열." }
+      {
+        "name": "ticket-column",
+        "value": "19.5rem",
+        "purpose": "뷰포트 브레이크포인트 대신 ticket-grid의 최소 칸 폭. 공 6개(280px) + 티켓 패딩 32px. 최대 컨테이너에서 2열, 휴대폰에서 1열."
+      }
     ]
   },
   "components": [
@@ -231,106 +351,164 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "번호 생성 버튼. 코발트 인디고, 페이지 내 한 개만.",
+      "description": "'번호 생성'. 탭마다 하나뿐인 주 행동.",
       "html": "<button class=\"ds-btn-primary\">번호 생성</button>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; background: oklch(0.55 0.105 230); color: oklch(0.95 0.000 0); padding: 10px 24px; border: none; border-radius: 8px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; line-height: 1; cursor: pointer; transition: background 150ms cubic-bezier(0.25, 0, 0.1, 1); } .ds-btn-primary:hover { background: oklch(0.61 0.105 230); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px oklch(0.55 0.105 230 / 0.6); } .ds-btn-primary:disabled { opacity: 0.4; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-btn-primary { transition: none; } }"
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; background: var(--ds-primary, oklch(0.51 0.105 230)); color: var(--ds-ink, oklch(0.95 0 0)); padding: 10px 24px; border: none; border-radius: 8px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; line-height: 1.43; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary:hover { background: var(--ds-primary-hover, oklch(0.47 0.105 230)); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--ds-focus, oklch(0.72 0.1 230)); } @media (prefers-reduced-motion: reduce) { .ds-btn-primary { transition: none; } }"
     },
     {
-      "name": "Ghost Destructive Button",
+      "name": "Ghost Disclosure Trigger",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "'어떻게 뽑나요?' · '이전 기록 N개'. shadcn Button ghost sm + 셰브런.",
+      "html": "<div class=\"ds-ghost-row\"><button class=\"ds-btn-ghost\" aria-expanded=\"false\"><span>이전 기록 <span class=\"ds-tnum\">4</span>개</span><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></button><button class=\"ds-btn-ghost\" aria-expanded=\"true\"><span>어떻게 뽑나요?</span><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></button></div>",
+      "css": ".ds-ghost-row { display: flex; gap: 8px; } .ds-btn-ghost { display: inline-flex; align-items: center; gap: 4px; height: 28px; padding: 0 6px 0 10px; background: transparent; color: var(--ds-muted, oklch(0.68 0 0)); border: 1px solid transparent; border-radius: 6px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.8rem; font-weight: 500; white-space: nowrap; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-ghost svg { transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-ghost:hover { background: oklch(0.17 0 0 / 0.5); color: var(--ds-ink, oklch(0.95 0 0)); } .ds-btn-ghost[aria-expanded=\"true\"] { background: var(--ds-surface-raised, oklch(0.17 0 0)); color: var(--ds-ink, oklch(0.95 0 0)); } .ds-btn-ghost[aria-expanded=\"true\"] svg { transform: rotate(180deg); } .ds-btn-ghost:active { transform: translateY(1px); } .ds-btn-ghost:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--ds-focus, oklch(0.72 0.1 230)); } .ds-tnum { font-variant-numeric: tabular-nums; } @media (prefers-reduced-motion: reduce) { .ds-btn-ghost, .ds-btn-ghost svg { transition: none; } }"
+    },
+    {
+      "name": "Destructive Actions",
       "kind": "button",
       "refersTo": "button-destructive",
-      "description": "삭제 행동. 투명 배경, 딥 레드 텍스트. Ghost 스타일.",
-      "html": "<button class=\"ds-btn-destructive\">전체 삭제</button>",
-      "css": ".ds-btn-destructive { display: inline-flex; align-items: center; background: transparent; color: oklch(0.65 0.18 25); padding: 4px 8px; border: none; border-radius: 6px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; font-weight: 500; cursor: pointer; transition: background 150ms cubic-bezier(0.25, 0, 0.1, 1), color 150ms cubic-bezier(0.25, 0, 0.1, 1); } .ds-btn-destructive:hover { background: oklch(0.65 0.18 25 / 0.12); color: oklch(0.55 0.18 25); } .ds-btn-destructive:focus-visible { outline: none; box-shadow: 0 0 0 2px oklch(0.55 0.105 230 / 0.6); } @media (prefers-reduced-motion: reduce) { .ds-btn-destructive { transition: none; } }"
+      "description": "'전체 삭제'(딥 레드 ghost)와 기록 항목 '삭제'(평소 뮤트, hover 시 딥 레드).",
+      "html": "<div class=\"ds-destructive-row\"><button class=\"ds-btn-destructive\">전체 삭제</button><button class=\"ds-btn-delete-quiet\" aria-label=\"이 기록 삭제\">삭제</button></div>",
+      "css": ".ds-destructive-row { display: flex; gap: 16px; align-items: center; } .ds-btn-destructive { background: transparent; color: var(--ds-destructive, oklch(0.65 0.18 25)); padding: 4px 8px; border: none; border-radius: 6px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; font-weight: 400; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-destructive:hover { background: var(--ds-destructive-tint, oklch(0.65 0.18 25 / 0.12)); } .ds-btn-delete-quiet { background: transparent; color: var(--ds-muted, oklch(0.68 0 0)); padding: 0 4px; border: none; border-radius: 4px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; font-weight: 400; cursor: pointer; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-delete-quiet:hover { color: var(--ds-destructive, oklch(0.65 0.18 25)); } .ds-btn-destructive:focus-visible, .ds-btn-delete-quiet:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--ds-focus, oklch(0.72 0.1 230)); } @media (prefers-reduced-motion: reduce) { .ds-btn-destructive, .ds-btn-delete-quiet { transition: none; } }"
     },
     {
-      "name": "Stepper Control",
+      "name": "Game Count Stepper",
       "kind": "custom",
-      "refersTo": null,
-      "description": "게임 수 선택기. 원형 +/- 버튼과 카운터 표시.",
-      "html": "<div class=\"ds-stepper\"><button class=\"ds-stepper-btn\" aria-label=\"게임 수 감소\">-</button><span class=\"ds-stepper-val\">5</span><button class=\"ds-stepper-btn\" aria-label=\"게임 수 증가\">+</button></div>",
-      "css": ".ds-stepper { display: flex; align-items: center; gap: 12px; } .ds-stepper-btn { width: 32px; height: 32px; border-radius: 9999px; border: 1px solid oklch(0.21 0.000 0); background: transparent; color: oklch(0.80 0.000 0); font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 150ms cubic-bezier(0.25, 0, 0.1, 1), border-color 150ms cubic-bezier(0.25, 0, 0.1, 1); } .ds-stepper-btn:hover:not(:disabled) { background: oklch(0.17 0.000 0); border-color: oklch(0.30 0.000 0); } .ds-stepper-btn:focus-visible { outline: none; box-shadow: 0 0 0 2px oklch(0.55 0.105 230 / 0.6); } .ds-stepper-btn:disabled { opacity: 0.3; cursor: not-allowed; } .ds-stepper-val { min-width: 24px; text-align: center; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; color: oklch(0.95 0.000 0); font-variant-numeric: tabular-nums; } @media (prefers-reduced-motion: reduce) { .ds-stepper-btn { transition: none; } }"
+      "refersTo": "stepper-button",
+      "description": "게임 수 1–10. 원형 −/+ 버튼과 tabular 카운터.",
+      "html": "<div class=\"ds-stepper\"><span class=\"ds-stepper-label\">게임 수</span><div class=\"ds-stepper-controls\"><button class=\"ds-stepper-btn\" aria-label=\"게임 수 감소\">-</button><span class=\"ds-stepper-val\">5</span><button class=\"ds-stepper-btn\" aria-label=\"게임 수 증가\">+</button></div></div>",
+      "css": ".ds-stepper { display: flex; align-items: center; gap: 16px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; } .ds-stepper-label { font-size: 0.875rem; font-weight: 500; color: var(--ds-muted, oklch(0.68 0 0)); } .ds-stepper-controls { display: flex; align-items: center; gap: 12px; } .ds-stepper-btn { width: 32px; height: 32px; border-radius: 9999px; border: 1px solid var(--ds-border, oklch(0.21 0 0)); background: transparent; color: var(--ds-ink, oklch(0.95 0 0)); font: inherit; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-stepper-btn:hover:not(:disabled) { background: var(--ds-surface-raised, oklch(0.17 0 0)); border-color: oklch(0.30 0 0); } .ds-stepper-btn:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--ds-focus, oklch(0.72 0.1 230)); } .ds-stepper-btn:disabled { opacity: 0.3; cursor: not-allowed; } .ds-stepper-val { width: 24px; text-align: center; font-size: 1.125rem; font-weight: 600; color: var(--ds-ink, oklch(0.95 0 0)); font-variant-numeric: tabular-nums; } @media (prefers-reduced-motion: reduce) { .ds-stepper-btn { transition: none; } }"
+    },
+    {
+      "name": "Header Tabs",
+      "kind": "nav",
+      "refersTo": "tab",
+      "description": "레이즈드 패널 헤더와 폴더 탭. 활성 탭이 헤더 하단선을 덮어 본문으로 이어진다.",
+      "html": "<div class=\"ds-header\"><h1 class=\"ds-header-title\">복권 번호 생성기</h1><nav class=\"ds-tabs\" aria-label=\"복권 종류 선택\"><button class=\"ds-tab\" aria-current=\"page\">로또 6/45</button><button class=\"ds-tab\">연금복권 720+</button></nav></div><div class=\"ds-header-below\"></div>",
+      "css": ".ds-header { background: var(--ds-surface-raised, oklch(0.17 0 0)); border-bottom: 1px solid var(--ds-border, oklch(0.21 0 0)); padding: 20px 16px 0; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; } .ds-header-title { margin: 0; font-size: 1.5rem; font-weight: 700; line-height: 1.333; letter-spacing: -0.01em; color: var(--ds-ink, oklch(0.95 0 0)); } .ds-tabs { display: flex; gap: 4px; margin-top: 16px; } .ds-tab { padding: 8px 16px; font: inherit; font-size: 0.875rem; font-weight: 500; line-height: 1.43; color: var(--ds-muted, oklch(0.68 0 0)); background: transparent; border: 1px solid transparent; border-bottom: 0; border-radius: 8px 8px 0 0; cursor: pointer; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-tab:hover { background: var(--ds-surface, oklch(0.13 0 0)); color: var(--ds-ink, oklch(0.95 0 0)); } .ds-tab[aria-current=\"page\"] { background: var(--ds-bg, oklch(0.09 0 0)); color: var(--ds-ink, oklch(0.95 0 0)); border-color: var(--ds-border, oklch(0.21 0 0)); margin-bottom: -1px; padding-bottom: 9px; } .ds-tab:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--ds-focus, oklch(0.72 0.1 230)); } .ds-header-below { height: 24px; background: var(--ds-bg, oklch(0.09 0 0)); } @media (prefers-reduced-motion: reduce) { .ds-tab { transition: none; } }"
     },
     {
       "name": "Number Balls",
       "kind": "custom",
-      "refersTo": null,
-      "description": "40×40px 원형 번호 공. 5개 색상은 고정 제약 조건.",
-      "html": "<div class=\"ds-ball-demo\"><span class=\"ds-number-ball ds-ball-yellow\">3</span><span class=\"ds-number-ball ds-ball-blue\">15</span><span class=\"ds-number-ball ds-ball-red\">27</span><span class=\"ds-number-ball ds-ball-gray\">38</span><span class=\"ds-number-ball ds-ball-green\">42</span></div>",
-      "css": ".ds-ball-demo { display: flex; gap: 8px; align-items: center; } .ds-number-ball { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9999px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.875rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; flex-shrink: 0; } .ds-ball-yellow { background: oklch(0.852 0.199 100); color: oklch(0.20 0.000 0); } .ds-ball-blue { background: oklch(0.623 0.214 259); color: oklch(0.95 0.000 0); } .ds-ball-red { background: oklch(0.626 0.258 29); color: oklch(0.95 0.000 0); } .ds-ball-gray { background: oklch(0.704 0.015 252); color: oklch(0.20 0.000 0); } .ds-ball-green { background: oklch(0.723 0.219 149); color: oklch(0.95 0.000 0); }"
+      "refersTo": "number-ball-yellow",
+      "description": "40×40px 번호 공. 5색은 번호 구간 고정. 생성 시 160ms 등장 + 40ms stagger.",
+      "html": "<div class=\"ds-ball-row\"><span class=\"ds-ball ds-ball-yellow\">3</span><span class=\"ds-ball ds-ball-blue\">15</span><span class=\"ds-ball ds-ball-red\">27</span><span class=\"ds-ball ds-ball-gray\">38</span><span class=\"ds-ball ds-ball-green\">42</span></div>",
+      "css": ".ds-ball-row { display: flex; gap: 8px; flex-wrap: wrap; } .ds-ball { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9999px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; animation: ds-ball-enter 160ms cubic-bezier(0.22, 1, 0.36, 1) both; } .ds-ball:nth-child(2) { animation-delay: 40ms; } .ds-ball:nth-child(3) { animation-delay: 80ms; } .ds-ball:nth-child(4) { animation-delay: 120ms; } .ds-ball:nth-child(5) { animation-delay: 160ms; } .ds-ball-yellow { background: oklch(0.852 0.199 100); color: oklch(0.2 0 0); } .ds-ball-blue { background: oklch(0.623 0.214 259); color: oklch(0.95 0 0); } .ds-ball-red { background: oklch(0.626 0.258 29); color: oklch(0.95 0 0); } .ds-ball-gray { background: oklch(0.704 0.015 252); color: oklch(0.2 0 0); } .ds-ball-green { background: oklch(0.723 0.219 149); color: oklch(0.2 0 0); } @keyframes ds-ball-enter { from { opacity: 0; transform: scale(0.55); } to { opacity: 1; transform: scale(1); } } @media (prefers-reduced-motion: reduce) { .ds-ball { animation: none; } }"
     },
     {
       "name": "Lotto Ticket",
       "kind": "card",
-      "refersTo": "card",
-      "description": "단일 게임의 6개 번호를 담는 카드. 레이블과 번호 공 행.",
-      "html": "<div class=\"ds-ticket\"><p class=\"ds-ticket-label\">게임 A</p><div class=\"ds-ticket-balls\"><span class=\"ds-number-ball ds-ball-yellow\">3</span><span class=\"ds-number-ball ds-ball-yellow\">9</span><span class=\"ds-number-ball ds-ball-blue\">14</span><span class=\"ds-number-ball ds-ball-red\">27</span><span class=\"ds-number-ball ds-ball-gray\">35</span><span class=\"ds-number-ball ds-ball-green\">42</span></div></div>",
-      "css": ".ds-ticket { background: oklch(0.13 0.000 0); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; } .ds-ticket-label { font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; font-weight: 500; color: oklch(0.55 0.000 0); margin: 0; } .ds-ticket-balls { display: flex; gap: 8px; flex-wrap: wrap; } .ds-number-ball { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9999px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.875rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; flex-shrink: 0; } .ds-ball-yellow { background: oklch(0.852 0.199 100); color: oklch(0.20 0.000 0); } .ds-ball-blue { background: oklch(0.623 0.214 259); color: oklch(0.95 0.000 0); } .ds-ball-red { background: oklch(0.626 0.258 29); color: oklch(0.95 0.000 0); } .ds-ball-gray { background: oklch(0.704 0.015 252); color: oklch(0.20 0.000 0); } .ds-ball-green { background: oklch(0.723 0.219 149); color: oklch(0.95 0.000 0); }"
+      "refersTo": "ticket",
+      "description": "한 게임의 번호 여섯 개. 게임 레이블 + 오름차순 공.",
+      "html": "<div class=\"ds-ticket\"><p class=\"ds-ticket-label\">게임 A</p><div class=\"ds-ticket-balls\"><span class=\"ds-ball ds-ball-yellow\">3</span><span class=\"ds-ball ds-ball-yellow\">9</span><span class=\"ds-ball ds-ball-blue\">14</span><span class=\"ds-ball ds-ball-red\">27</span><span class=\"ds-ball ds-ball-gray\">35</span><span class=\"ds-ball ds-ball-green\">42</span></div></div>",
+      "css": ".ds-ticket { background: var(--ds-surface, oklch(0.13 0 0)); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; } .ds-ticket-label { margin: 0; font-size: 0.75rem; font-weight: 500; color: var(--ds-muted, oklch(0.68 0 0)); } .ds-ticket-balls { display: flex; gap: 8px; flex-wrap: wrap; } .ds-ball { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9999px; font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; } .ds-ball-yellow { background: oklch(0.852 0.199 100); color: oklch(0.2 0 0); } .ds-ball-blue { background: oklch(0.623 0.214 259); color: oklch(0.95 0 0); } .ds-ball-red { background: oklch(0.626 0.258 29); color: oklch(0.95 0 0); } .ds-ball-gray { background: oklch(0.704 0.015 252); color: oklch(0.2 0 0); } .ds-ball-green { background: oklch(0.723 0.219 149); color: oklch(0.2 0 0); }"
+    },
+    {
+      "name": "Pension Ticket",
+      "kind": "card",
+      "refersTo": "pension-group-badge",
+      "description": "연금복권 한 게임. 코발트 조 배지 + 레이즈드 숫자 칸 여섯 개(35ms stagger).",
+      "html": "<div class=\"ds-pticket\"><p class=\"ds-pticket-label\">게임 A</p><div class=\"ds-pticket-row\"><span class=\"ds-pticket-group\">3조</span><div class=\"ds-pticket-digits\"><span class=\"ds-pdigit\">0</span><span class=\"ds-pdigit\">4</span><span class=\"ds-pdigit\">7</span><span class=\"ds-pdigit\">1</span><span class=\"ds-pdigit\">9</span><span class=\"ds-pdigit\">2</span></div></div></div>",
+      "css": ".ds-pticket { background: var(--ds-surface, oklch(0.13 0 0)); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; } .ds-pticket-label { margin: 0; font-size: 0.75rem; font-weight: 500; color: var(--ds-muted, oklch(0.68 0 0)); } .ds-pticket-row { display: flex; align-items: center; gap: 8px; } .ds-pticket-group { display: inline-flex; align-items: center; justify-content: center; min-width: 48px; padding: 4px 10px; border-radius: 8px; background: var(--ds-primary, oklch(0.51 0.105 230)); color: var(--ds-ink, oklch(0.95 0 0)); font-size: 0.875rem; font-weight: 700; } .ds-pticket-digits { display: flex; gap: 6px; } .ds-pdigit { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 40px; border-radius: 6px; background: var(--ds-surface-raised, oklch(0.17 0 0)); border: 1px solid var(--ds-border, oklch(0.21 0 0)); color: var(--ds-ink, oklch(0.95 0 0)); font-size: 0.875rem; font-weight: 700; font-variant-numeric: tabular-nums; animation: ds-pdigit-enter 160ms cubic-bezier(0.22, 1, 0.36, 1) both; } .ds-pdigit:nth-child(2) { animation-delay: 35ms; } .ds-pdigit:nth-child(3) { animation-delay: 70ms; } .ds-pdigit:nth-child(4) { animation-delay: 105ms; } .ds-pdigit:nth-child(5) { animation-delay: 140ms; } .ds-pdigit:nth-child(6) { animation-delay: 175ms; } @keyframes ds-pdigit-enter { from { opacity: 0; transform: scale(0.55); } to { opacity: 1; transform: scale(1); } } @media (prefers-reduced-motion: reduce) { .ds-pdigit { animation: none; } }"
+    },
+    {
+      "name": "Fairness Notice",
+      "kind": "custom",
+      "refersTo": "fairness-panel",
+      "description": "본문 맨 위 신뢰 한 줄 + 펼치면 생성 방식 설명 패널.",
+      "html": "<section class=\"ds-fair\"><div class=\"ds-fair-line\"><span class=\"ds-fair-summary\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" class=\"ds-fair-icon\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/><path d=\"m9 12 2 2 4-4\"/></svg>모든 번호 조합이 똑같은 확률로 나옵니다</span></div><div class=\"ds-fair-panel\"><dl class=\"ds-fair-list\"><div><dt>치우침 없이 뽑습니다</dt><dd>보안용 암호학적 난수로 1~45를 골고루 섞은 뒤 6개를 고릅니다.</dd></div><div><dt>당첨 확률을 높여주지는 않습니다</dt><dd>어떤 조합이든 1등 확률은 8,145,060분의 1로 같습니다.</dd></div></dl><p class=\"ds-fair-foot\">번호는 이 브라우저 안에서 만들어지고, 생성 기록도 이 기기에만 저장됩니다.</p></div></section>",
+      "css": ".ds-fair { display: flex; flex-direction: column; gap: 12px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.875rem; } .ds-fair-summary { display: inline-flex; align-items: center; gap: 6px; color: var(--ds-ink, oklch(0.95 0 0)); } .ds-fair-icon { flex-shrink: 0; color: var(--ds-primary, oklch(0.51 0.105 230)); } .ds-fair-panel { background: var(--ds-surface, oklch(0.13 0 0)); border: 1px solid var(--ds-border, oklch(0.21 0 0)); border-radius: 8px; padding: 16px; } .ds-fair-list { margin: 0; display: flex; flex-direction: column; gap: 12px; } .ds-fair-list dt { font-weight: 500; color: var(--ds-ink, oklch(0.95 0 0)); } .ds-fair-list dd { margin: 2px 0 0; color: var(--ds-muted, oklch(0.68 0 0)); line-height: 1.625; } .ds-fair-foot { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--ds-border, oklch(0.21 0 0)); font-size: 0.75rem; color: var(--ds-muted, oklch(0.68 0 0)); }"
     },
     {
       "name": "History Entry",
       "kind": "card",
-      "refersTo": "card",
-      "description": "생성 기록 항목. 타임스탬프 + 삭제 버튼 + 티켓 그리드.",
-      "html": "<div class=\"ds-history-entry\"><div class=\"ds-history-entry-header\"><span class=\"ds-history-entry-date\">2026. 06. 04. 오후 7:43</span><button class=\"ds-btn-destructive\">삭제</button></div><div class=\"ds-history-entry-tickets\"></div></div>",
-      "css": ".ds-history-entry { background: oklch(0.13 0.000 0); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 12px; } .ds-history-entry-header { display: flex; align-items: center; justify-content: space-between; } .ds-history-entry-date { font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; font-weight: 400; color: oklch(0.55 0.000 0); font-variant-numeric: tabular-nums; } .ds-history-entry-tickets { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; } .ds-btn-destructive { display: inline-flex; align-items: center; background: transparent; color: oklch(0.65 0.18 25); padding: 2px 6px; border: none; border-radius: 4px; font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 0.75rem; font-weight: 500; cursor: pointer; } .ds-btn-destructive:hover { background: oklch(0.65 0.18 25 / 0.12); }"
+      "refersTo": "history-entry",
+      "description": "기록 한 건. 날짜 + 조용한 삭제 + 티켓 그리드. 안의 티켓과 같은 서피스라 한 면으로 이어진다.",
+      "html": "<div class=\"ds-hentry\"><div class=\"ds-hentry-head\"><span class=\"ds-hentry-date\">2026. 09. 11. 오후 07:43</span><button class=\"ds-hentry-del\" aria-label=\"이 기록 삭제\">삭제</button></div><div class=\"ds-hentry-grid\"><div class=\"ds-hentry-ticket\"><p>게임 A</p><div class=\"ds-hentry-balls\"><span class=\"ds-b y\">5</span><span class=\"ds-b bl\">12</span><span class=\"ds-b r\">23</span><span class=\"ds-b r\">29</span><span class=\"ds-b g\">36</span><span class=\"ds-b gr\">44</span></div></div></div></div>",
+      "css": ".ds-hentry { background: var(--ds-surface, oklch(0.13 0 0)); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 12px; font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; } .ds-hentry-head { display: flex; align-items: center; justify-content: space-between; } .ds-hentry-date { font-size: 0.75rem; color: var(--ds-muted, oklch(0.68 0 0)); font-variant-numeric: tabular-nums; } .ds-hentry-del { background: transparent; border: none; padding: 0 4px; border-radius: 4px; font: inherit; font-size: 0.75rem; color: var(--ds-muted, oklch(0.68 0 0)); cursor: pointer; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-hentry-del:hover { color: var(--ds-destructive, oklch(0.65 0.18 25)); } .ds-hentry-del:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--ds-focus, oklch(0.72 0.1 230)); } .ds-hentry-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19.5rem), 1fr)); gap: 8px; } .ds-hentry-ticket { background: var(--ds-surface, oklch(0.13 0 0)); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; } .ds-hentry-ticket p { margin: 0; font-size: 0.75rem; font-weight: 500; color: var(--ds-muted, oklch(0.68 0 0)); } .ds-hentry-balls { display: flex; gap: 8px; flex-wrap: wrap; } .ds-b { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9999px; font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; } .ds-b.y { background: oklch(0.852 0.199 100); color: oklch(0.2 0 0); } .ds-b.bl { background: oklch(0.623 0.214 259); color: oklch(0.95 0 0); } .ds-b.r { background: oklch(0.626 0.258 29); color: oklch(0.95 0 0); } .ds-b.g { background: oklch(0.704 0.015 252); color: oklch(0.2 0 0); } .ds-b.gr { background: oklch(0.723 0.219 149); color: oklch(0.2 0 0); } @media (prefers-reduced-motion: reduce) { .ds-hentry-del { transition: none; } }"
     }
   ],
   "narrative": {
     "northStar": "The Midnight Terminal",
-    "overview": "한밤의 로또 판매점 끝자리 터미널. 형광등이 꺼지고 남겨진 추첨기 앞, 어두운 화면 위에 다섯 가지 색의 번호 공이 보석처럼 점등된다. 이 시스템은 그 순간의 고요한 정확함을 포착한다. 화려함이 아니라 신뢰감, 반짝임이 아니라 집중.\n\nUI 표면은 의도적으로 어둡고 중립적이다. 코발트 인디고가 주요 행동 요소 하나를 지시하고, 나머지 표면은 로또 공 다섯 색상이 가장 선명하게 빛나도록 비켜선다. Vercel, Linear, Raycast가 보여주는 도구적 정직함 — 인터페이스가 작업 속으로 사라진다.",
+    "overview": "한밤의 로또 판매점 끝자리 터미널. 형광등이 꺼지고 남겨진 추첨기 앞, 어두운 화면 위에 다섯 가지 색의 번호 공이 보석처럼 점등된다. 이 시스템은 그 순간의 고요한 정확함을 포착한다. 화려함이 아니라 신뢰감, 반짝임이 아니라 집중.\n\nUI 표면은 의도적으로 어둡고 중립적이다. 코발트 인디고가 행동 하나를 지시하고, 나머지 표면은 로또 공 다섯 색과 연금복권 숫자판이 가장 선명하게 읽히도록 비켜선다. Vercel, Linear, Raycast가 보여주는 도구적 정직함 — 인터페이스가 작업 속으로 사라진다. 컴포넌트는 정돈되고 직접적이다: 눈길을 끄는 연출은 없지만, 정확히 작동한다는 확신을 준다.\n\n두 복권은 같은 무대를 공유한다. 탭 하나로 전환되고, 게임 수 선택기·생성 버튼·기록·공정성 안내는 같은 부품을 그대로 쓴다. 달라지는 것은 번호가 담기는 티켓뿐이다 — 로또는 색 공 여섯 개, 연금복권은 조 배지와 여섯 칸 숫자판.\n\n이 시스템이 명시적으로 거부하는 것: 카지노·사행성 게임의 금색, 반짝임, 네온, 잭팟 이펙트. 그리고 동행복권 사이트 같은 공공기관 스타일의 정보 과부하, 복잡한 양식, 밀집된 격자.",
     "keyCharacteristics": [
-      "어두운 무채색 표면 위에 로또 공 5색이 조명처럼 빛남",
-      "코발트 인디고 1개 액션 색상, 전체 표면의 ≤10%",
-      "Pretendard 단일 패밀리, 무게 대비로만 위계 구성",
-      "상태에 반응하는 모션 150-250ms, 입장 연출 없음",
-      "여백이 구역을 구분한다. 카드 테두리는 장식이 아니라 배경 대비"
+      "어두운 무채색 표면 위에서 로또 공 5색이 조명처럼 빛남",
+      "코발트 인디고는 세 자리에만: 생성 버튼, 연금 조 배지, 공정성 방패 아이콘",
+      "Pretendard Variable 단일 패밀리, 크기보다 무게 대비로 위계 구성",
+      "모션은 사용자의 행동에만 반응: 상태 전환 150ms, 번호 등장 160ms + stagger, 페이지 로드 연출 없음",
+      "그림자 대신 명도 계단으로 깊이 표현, 여백이 구역을 구분"
     ],
     "rules": [
       {
         "name": "The Quiet Stage Rule",
-        "body": "로또 공 5색은 이 UI의 목소리다. 앱 셸은 그 다섯 색과 경쟁하지 않는다. 코발트 인디고 외에 채도 있는 색을 앱 셸에 추가하지 않는다.",
+        "body": "로또 공 5색은 이 UI의 목소리다. 앱 셸은 그 다섯 색과 경쟁하지 않는다. 코발트 인디고와 딥 레드 외에 채도 있는 색을 앱 셸에 추가하지 않는다.",
         "section": "colors"
       },
       {
         "name": "The Single Voice Rule",
-        "body": "코발트 인디고는 번호 생성 버튼 하나에만 사용한다. 링크, 아이콘, 배지에 분산시키지 않는다. 희귀함이 강조다.",
+        "body": "코발트 인디고는 세 자리에만 쓴다: '번호 생성' 버튼(화면의 유일한 주 행동), 연금복권 'N조' 배지(티켓에서 가장 먼저 읽혀야 하는 값), 공정성 안내의 방패 아이콘(신뢰 표식). 키보드 포커스 링은 같은 계열의 더 밝은 값(`focus`)을 쓴다. 링크·다른 배지·장식 아이콘으로 퍼뜨리지 않는다. 네 번째 자리가 필요해 보이면 규칙을 먼저 고친다.",
         "section": "colors"
       },
       {
-        "name": "The No Uppercase Body Rule",
-        "body": "레이블과 버튼 텍스트는 소문자 유지. text-transform: uppercase는 사용하지 않는다.",
+        "name": "The Measured Contrast Rule",
+        "body": "대비 수치는 계산해서 적는다. 새 전경/배경 조합은 추가하기 전에 측정하고, 4.5:1(텍스트)·3:1(아이콘·경계)에 못 미치면 그 자리에서 고친다. 알려진 경계값(공 숫자 20px, 어두워지는 hover)을 되돌리지 않는다.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Uppercase Rule",
+        "body": "`text-transform: uppercase`를 쓰지 않는다. 게임 레이블은 \"게임 A\"이지 \"GAME A\"가 아니다.",
         "section": "typography"
       },
       {
         "name": "The Tabular Numbers Rule",
-        "body": "공 안의 숫자, 게임 수 카운터, 날짜의 모든 수치에 font-variant-numeric: tabular-nums를 적용한다.",
+        "body": "공 안의 숫자, 연금 숫자 칸, 스테퍼 카운터, 날짜, \"이전 기록 N개\"의 N — 바뀌는 모든 수치에 `tabular-nums`를 적용한다. 숫자가 바뀌어도 레이아웃이 흔들리지 않는다.",
         "section": "typography"
       },
       {
+        "name": "The Numbers First Rule",
+        "body": "생성 버튼과 결과 사이에는 아무것도 두지 않는다. 설명(공정성 안내)과 기록은 기본으로 접혀 있고 사용자가 열 때만 펼쳐진다. 새로 추가하는 것도 번호보다 먼저 시선을 빼앗지 않는 자리에 둔다.",
+        "section": "layout"
+      },
+      {
+        "name": "The One Row Rule",
+        "body": "한 게임의 번호는 한 줄에 놓인다. 공이 두 줄로 넘어가거나 숫자판이 티켓 밖으로 넘치면 레이아웃이 틀린 것이다 — 공을 줄이지 말고 열을 줄인다.",
+        "section": "layout"
+      },
+      {
         "name": "The Flat-By-Default Rule",
-        "body": "표면은 정적 상태에서 평평하다. 그림자는 오직 키보드 포커스 링에만 사용한다.",
+        "body": "표면은 정적 상태에서 평평하다. 그림자는 포커스 링 하나뿐이다. 버튼, 카드, 공에도 그림자를 넣지 않는다.",
         "section": "elevation"
+      },
+      {
+        "name": "The Nested Radius Rule",
+        "body": "안쪽 요소는 바깥 요소보다 둥글지 않다: 컨테이너 12px > 컨트롤·패널 8px > 내부 칸 6px. 공과 스테퍼만 예외로 완전한 원이다.",
+        "section": "shapes"
       }
     ],
     "dos": [
       "Do 로또 공 5색을 절대 변경하지 않는다. 사용자가 이미 아는 언어다.",
-      "Do 실버 그레이(31-40) 번호 공에는 어두운 텍스트를 사용한다. 흰 텍스트는 WCAG AA 실패.",
-      "Do 코발트 인디고는 번호 생성 버튼 하나에만 쓴다. 전체 표면의 ≤10%.",
-      "Do 모든 인터랙티브 요소에 focus-ring을 적용한다.",
-      "Do 모든 수치에 font-variant-numeric: tabular-nums를 적용한다.",
-      "Do prefers-reduced-motion 대응. transition에 @media 대안을 제공한다.",
-      "Do aria-label을 모든 아이콘 전용 버튼에 적용한다."
+      "Do 옐로·그레이·그린 공에는 다크 볼 잉크를 쓴다. 이 셋 위의 화이트 잉크는 20px에서도 3:1에 못 미친다.",
+      "Do 코발트 인디고는 생성 버튼, 연금 조 배지, 공정성 방패 아이콘, 포커스 링에만 쓴다.",
+      "Do 새 색 조합은 추가 전에 대비를 계산한다. 텍스트 4.5:1, 아이콘·경계 3:1.",
+      "Do 모든 인터랙티브 요소에 `focus-visible-ring`을 적용한다.",
+      "Do 바뀌는 모든 수치에 `tabular-nums`를 적용한다.",
+      "Do 모든 모션에 `prefers-reduced-motion` 대안을 둔다 — 등장 애니메이션은 끄고, 셰브런 회전과 디스클로저 모션은 `motion-reduce:`로 끈다.",
+      "Do 아이콘 전용 버튼과 기호 버튼(−, +, 삭제)에 `aria-label`을 단다.",
+      "Do 새 디스클로저·버튼은 `src/components/ui/`의 shadcn `Collapsible`·`Button`으로 만든다. 색은 `--ds-*`를 통해 자동으로 맞는다.",
+      "Do 두 복권 탭에 같은 부품을 쓴다. 복권별로 달라지는 것은 티켓 모양과 안내 문구뿐이다."
     ],
     "donts": [
-      "Don't 금색, 반짝임, 네온, 그라디언트 텍스트. 카지노/기능게임 언어다.",
-      "Don't border-left > 1px 컬러 스트라이프 장식. 절대 금지.",
-      "Don't 국가 공공기관 스타일의 밀집된 격자, 복잡한 양식.",
-      "Don't 로또 공 색상과 겹치는 채도 있는 브랜드 색상을 앱 셸에 추가한다.",
-      "Don't 섹션마다 작은 대문자 눈썹 레이블.",
-      "Don't 페이지 로드 시 오케스트레이션 애니메이션.",
-      "Don't 따뜻한 크림/샌드/베이지 배경.",
-      "Don't 중첩 카드. LottoTicket이 이미 카드다."
+      "Don't 금색, 반짝임, 네온, 그라디언트 텍스트, 잭팟 이펙트. 카지노·사행성 게임의 언어다.",
+      "Don't 폭 1px을 넘는 컬러 좌측선 장식. 카드 좌측 강조선은 절대 금지.",
+      "Don't 공공기관 스타일의 밀집된 격자, 복잡한 양식, 과도한 레이블.",
+      "Don't 로또 공 색과 겹치는 채도 있는 브랜드 색을 앱 셸에 추가한다.",
+      "Don't 섹션마다 작은 대문자 눈썹 레이블(\"GENERATOR\", \"HISTORY\")을 단다.",
+      "Don't 페이지 로드 시 오케스트레이션 애니메이션. 모션은 사용자가 번호를 뽑거나 무언가를 펼칠 때만.",
+      "Don't 따뜻한 크림·샌드·베이지 배경이나 라이트 테마. 이 앱은 다크 전용이다.",
+      "Don't 티켓 안에 또 다른 배경색 카드를 넣는다. 연금 숫자 칸이 유일한 표면 속 표면이다.",
+      "Don't 헤더에 슬로건형 부제를 붙인다.",
+      "Don't 포커스 표시를 Tailwind `ring-*`로 바꾼다. shadcn `ui/button.tsx`를 다시 받으면 `focus-visible-ring`을 다시 적용한다.",
+      "Don't 공 숫자를 20px 아래로 줄이거나 코발트 hover를 밝게 만든다. 둘 다 흰 텍스트 대비를 AA 아래로 떨어뜨린다."
     ]
   }
 }
