@@ -16,7 +16,8 @@
   --ds-surface-raised: oklch(0.17 0 0);
   --ds-border: oklch(0.21 0 0);
   --ds-ink: oklch(0.95 0 0);
-  --ds-muted: oklch(0.55 0 0);
+  /* 가장 밝은 표면(surface-raised) 위에서도 6.6:1 — 12px 레이블까지 AA 여유 확보 */
+  --ds-muted: oklch(0.68 0 0);
   --ds-primary: oklch(0.55 0.105 230);
   --ds-primary-hover: oklch(0.61 0.105 230);
   --ds-destructive: oklch(0.65 0.18 25);
