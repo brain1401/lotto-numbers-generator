@@ -14,6 +14,7 @@ npm run format:check # Prettier check (CI)
 npm test             # Vitest watch mode
 npm test -- --run    # single run
 npm test -- src/__tests__/utils/lotto.test.ts  # single file
+npm run bias         # 1M-trial Monte Carlo bias check (scripts/bias-check.ts, requires bun)
 ```
 
 ## Architecture

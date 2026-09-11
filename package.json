@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
+    "bias": "bun scripts/bias-check.ts",
     "format": "prettier . --write",
     "format:check": "prettier . --check"
   },
