@@ -44,7 +44,7 @@ export default function PensionHistoryPanel({
                 삭제
               </button>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <div className="ticket-grid gap-2">
               {entry.games.map((game, i) => (
                 <PensionTicket
                   key={i}

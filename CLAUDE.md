@@ -65,7 +65,9 @@ Single-page React 19 + Vite SPA with two tabbed features — Lotto 6/45 and Pens
 
 **Ball animation**: `ball-enter` keyframe with per-ball delay stagger via `.ball-animate:nth-child(n)` in `index.css`. Respects `prefers-reduced-motion`. Only applied when `animate` prop is passed to `LottoTicket`.
 
-**`focus-visible-ring`**: custom `@utility` in `index.css` that applies a 2px oklch blue ring on `:focus-visible`. Used on all interactive buttons; do not replace with Tailwind `ring-*`.
+**`focus-visible-ring`**: custom `@utility` in `index.css` that applies a 2px `--ds-focus` ring (light cobalt, lighter than `--ds-primary` so it stays visible on the cobalt button; shadcn's `--ring` points at it too) on `:focus-visible`. Used on all interactive buttons; do not replace with Tailwind `ring-*`.
+
+**`ticket-grid`**: `@utility` in `index.css` used by all four ticket grids (generator + history, both lotteries). Column count comes from a 19.5rem minimum column — six 40px balls + gaps + ticket padding — instead of viewport breakpoints, so balls never wrap and pension digits never overflow. Recompute the minimum if ball size, ball gap, or ticket padding changes.
 
 ### Testing
 

@@ -65,7 +65,7 @@ export default function FairnessNotice({ lottery }: FairnessNoticeProps) {
       <Collapsible className="space-y-3">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
           <span className="inline-flex items-center gap-1.5 text-ds-ink">
-            <ShieldCheckIcon aria-hidden className="size-4 shrink-0 text-ds-primary-hover" />
+            <ShieldCheckIcon aria-hidden className="size-4 shrink-0 text-ds-primary" />
             {summary}
           </span>
           <CollapsibleTrigger

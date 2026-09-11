@@ -44,7 +44,7 @@ export default function HistoryPanel({
                 삭제
               </button>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            <div className="ticket-grid gap-2">
               {entry.games.map((nums, i) => (
                 <LottoTicket key={i} numbers={nums} label={`게임 ${GAME_LABELS[i]}`} />
               ))}

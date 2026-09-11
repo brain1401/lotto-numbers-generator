@@ -18,10 +18,13 @@
   --ds-ink: oklch(0.95 0 0);
   /* 가장 밝은 표면(surface-raised) 위에서도 6.6:1 — 12px 레이블까지 AA 여유 확보 */
   --ds-muted: oklch(0.68 0 0);
-  --ds-primary: oklch(0.55 0.105 230);
-  --ds-primary-hover: oklch(0.61 0.105 230);
+  /* 흰 텍스트 대비 4.82:1(기본)·5.67:1(hover) — hover는 밝아지면 AA를 잃어서 어두워지는 쪽으로 */
+  --ds-primary: oklch(0.51 0.105 230);
+  --ds-primary-hover: oklch(0.47 0.105 230);
   --ds-destructive: oklch(0.65 0.18 25);
   --ds-destructive-tint: oklch(0.65 0.18 25 / 0.12);
+  /* 포커스 링 — 배경 8.5:1, 코발트 버튼 위에서도 구분되도록 코발트보다 밝게 */
+  --ds-focus: oklch(0.72 0.1 230);
 
   --background: var(--ds-bg);
   --foreground: var(--ds-ink);
@@ -40,7 +43,7 @@
   --destructive: var(--ds-destructive);
   --border: var(--ds-border);
   --input: var(--ds-border);
-  --ring: var(--ds-primary);
+  --ring: var(--ds-focus);
 }
 
 @theme inline {
@@ -58,6 +61,7 @@
   --color-ds-primary-hover: var(--ds-primary-hover);
   --color-ds-destructive: var(--ds-destructive);
   --color-ds-destructive-tint: var(--ds-destructive-tint);
+  --color-ds-focus: var(--ds-focus);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -96,7 +100,11 @@
   }
 }
 
-/* Lotto ball colors — fixed constraints from Korean Lotto 6/45 */
+/*
+ * Lotto ball colors — fixed constraints from Korean Lotto 6/45
+ * 공 숫자는 20px bold(큰 텍스트, 3:1 기준). 흰 숫자는 파랑 3.24·빨강 3.47로 통과,
+ * 노랑·회색·초록은 흰 숫자가 3:1에 못 미쳐 어두운 숫자를 쓴다.
+ */
 .ball-yellow {
   background: oklch(0.852 0.199 100);
   color: oklch(0.2 0 0);
@@ -115,7 +123,7 @@
 }
 .ball-green {
   background: oklch(0.723 0.219 149);
-  color: oklch(0.95 0 0);
+  color: oklch(0.2 0 0);
 }
 
 /* Ball entrance animation with stagger via nth-child */
@@ -162,8 +170,18 @@
 @utility focus-visible-ring {
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 2px oklch(0.55 0.105 230 / 0.6);
+    box-shadow: 0 0 0 2px var(--ds-focus);
   }
+}
+
+/*
+ * 티켓 그리드 — 가장 넓은 티켓(로또 공 6개 40×6 + 간격 8×5 = 280px) + 좌우 패딩 32px = 19.5rem.
+ * 칸이 이보다 좁으면 공이 두 줄로 넘어가고 연금 숫자판은 티켓 밖으로 넘치므로,
+ * 뷰포트가 아니라 들어가는 폭만큼 열을 만든다.
+ */
+@utility ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19.5rem), 1fr));
 }
 
 /* Pension lottery digit entrance animation */

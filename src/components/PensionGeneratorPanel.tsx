@@ -36,7 +36,7 @@ export default function PensionGeneratorPanel({
       </div>
 
       {currentGames.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="ticket-grid gap-3">
           {currentGames.map((game, i) => (
             <PensionTicket
               key={`${generationKey}-${i}`}

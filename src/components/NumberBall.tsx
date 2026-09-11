@@ -14,7 +14,7 @@ function getBallClass(n: number): string {
 export default function NumberBall({ number, animate = false }: NumberBallProps) {
   return (
     <span
-      className={`${animate ? 'ball-animate' : ''} ${getBallClass(number)} inline-flex items-center justify-center w-10 h-10 rounded-full text-sm font-bold tabular-nums`}
+      className={`${animate ? 'ball-animate' : ''} ${getBallClass(number)} inline-flex items-center justify-center w-10 h-10 rounded-full text-xl font-bold tabular-nums`}
     >
       {number}
     </span>
