@@ -12,9 +12,11 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<TabType>('lotto');
 
   const [currentGames, setCurrentGames] = useState<number[][]>([]);
+  const [currentEntryId, setCurrentEntryId] = useState<string | null>(null);
   const { history, addEntry, deleteEntry, clearAll } = useHistory();
 
   const [currentPensionGames, setCurrentPensionGames] = useState<PensionGame[]>([]);
+  const [currentPensionEntryId, setCurrentPensionEntryId] = useState<string | null>(null);
   const {
     history: pensionHistory,
     addEntry: addPensionEntry,
@@ -24,13 +26,17 @@ export default function App() {
 
   const handleGenerate = (games: number[][]) => {
     setCurrentGames(games);
-    addEntry(games);
+    setCurrentEntryId(addEntry(games));
   };
 
   const handlePensionGenerate = (games: PensionGame[]) => {
     setCurrentPensionGames(games);
-    addPensionEntry(games);
+    setCurrentPensionEntryId(addPensionEntry(games));
   };
+
+  // 방금 생성한 결과는 생성 섹션에 이미 보이므로 기록 목록에서는 뺀다
+  const previousHistory = history.filter((e) => e.id !== currentEntryId);
+  const previousPensionHistory = pensionHistory.filter((e) => e.id !== currentPensionEntryId);
 
   return (
     <div className="min-h-screen bg-ds-bg">
@@ -39,7 +45,12 @@ export default function App() {
         {activeTab === 'lotto' ? (
           <>
             <GeneratorPanel currentGames={currentGames} onGenerate={handleGenerate} />
-            <HistoryPanel history={history} onDeleteEntry={deleteEntry} onClearAll={clearAll} />
+            <HistoryPanel
+              history={previousHistory}
+              justSaved={previousHistory.length < history.length}
+              onDeleteEntry={deleteEntry}
+              onClearAll={clearAll}
+            />
           </>
         ) : (
           <>
@@ -48,7 +59,8 @@ export default function App() {
               onGenerate={handlePensionGenerate}
             />
             <PensionHistoryPanel
-              history={pensionHistory}
+              history={previousPensionHistory}
+              justSaved={previousPensionHistory.length < pensionHistory.length}
               onDeleteEntry={deletePensionEntry}
               onClearAll={clearAllPension}
             />

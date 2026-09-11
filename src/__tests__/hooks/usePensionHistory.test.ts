@@ -20,6 +20,15 @@ describe('usePensionHistory', () => {
     expect(result.current.history[0].games).toEqual([game1]);
   });
 
+  it('addEntry는 새 항목의 id를 반환한다', () => {
+    const { result } = renderHook(() => usePensionHistory());
+    let id = '';
+    act(() => {
+      id = result.current.addEntry([game1]);
+    });
+    expect(result.current.history[0].id).toBe(id);
+  });
+
   it('deleteEntry로 항목을 삭제할 수 있다', () => {
     const { result } = renderHook(() => usePensionHistory());
     act(() => result.current.addEntry([game1]));

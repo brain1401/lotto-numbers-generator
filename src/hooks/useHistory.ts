@@ -24,7 +24,7 @@ function saveToStorage(entries: LottoEntry[]): void {
 export function useHistory() {
   const [history, setHistory] = useState<LottoEntry[]>(loadFromStorage);
 
-  const addEntry = (games: number[][]) => {
+  const addEntry = (games: number[][]): string => {
     const entry: LottoEntry = {
       id: crypto.randomUUID(),
       timestamp: Date.now(),
@@ -35,6 +35,7 @@ export function useHistory() {
       saveToStorage(updated);
       return updated;
     });
+    return entry.id;
   };
 
   const deleteEntry = (id: string) => {

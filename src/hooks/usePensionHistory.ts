@@ -24,7 +24,7 @@ function saveToStorage(entries: PensionEntry[]): void {
 export function usePensionHistory() {
   const [history, setHistory] = useState<PensionEntry[]>(loadFromStorage);
 
-  const addEntry = (games: PensionGame[]) => {
+  const addEntry = (games: PensionGame[]): string => {
     const entry: PensionEntry = {
       id: crypto.randomUUID(),
       timestamp: Date.now(),
@@ -35,6 +35,7 @@ export function usePensionHistory() {
       saveToStorage(updated);
       return updated;
     });
+    return entry.id;
   };
 
   const deleteEntry = (id: string) => {

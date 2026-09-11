@@ -20,6 +20,15 @@ describe('useHistory', () => {
     expect(result.current.history[0].games).toEqual([[1, 2, 3, 4, 5, 6]]);
   });
 
+  it('addEntry returns the id of the new entry', () => {
+    const { result } = renderHook(() => useHistory());
+    let id = '';
+    act(() => {
+      id = result.current.addEntry([[1, 2, 3, 4, 5, 6]]);
+    });
+    expect(result.current.history[0].id).toBe(id);
+  });
+
   it('addEntry persists to localStorage', () => {
     const { result } = renderHook(() => useHistory());
     act(() => {
