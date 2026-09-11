@@ -19,27 +19,35 @@ npm run bias         # 1M-trial Monte Carlo bias check (scripts/bias-check.ts, r
 
 ## Architecture
 
-Single-page React 19 + Vite SPA. No routing, no external state management.
+Single-page React 19 + Vite SPA with two tabbed features — Lotto 6/45 and Pension lottery (연금복권 720+). No routing (tab switching via `useState`), no external state management.
 
 ### State & Data
 
-**State flow**: `App.tsx` owns root state — `currentGames` (latest generated numbers) and the `useHistory` hook (history list). `GeneratorPanel` calls `onGenerate` after generating; `App` updates both state and `useHistory.addEntry` together.
+**State flow**: `App.tsx` owns all root state — `activeTab` (`'lotto' | 'pension'`, drives which panels render) plus a parallel pair per feature: `currentGames` + `useHistory` (lotto) and `currentPensionGames` + `usePensionHistory` (pension). Each `*GeneratorPanel` calls `onGenerate` after generating; `App` updates the current-games state and the matching `addEntry` together.
 
-**`useHistory` hook** (`src/hooks/useHistory.ts`): persists up to 50 `LottoEntry` records to localStorage under key `lotto-history`. Lazy-initializes from `loadFromStorage`; silently ignores QuotaExceededError on writes.
+**`useHistory` / `usePensionHistory` hooks** (`src/hooks/`): near-identical history stores. Each persists up to 50 entries to localStorage (keys `lotto-history` / `pension-history`), lazy-initializes from `loadFromStorage`, silently ignores QuotaExceededError on writes, and exposes `{ history, addEntry, deleteEntry, clearAll }`.
 
-**Core type** (`src/types.ts`): `LottoEntry { id: string; timestamp: number; games: number[][] }` — `games` is an array of 6-number arrays, one per game.
+**Core types** (`src/types.ts`): `LottoEntry { id; timestamp; games: number[][] }` — `games` is an array of 6-number arrays, one per game. `PensionGame { group: number /* 1–5 */; digits: string /* zero-padded 6 digits */ }` and `PensionEntry { id; timestamp; games: PensionGame[] }` mirror this for pension.
 
 ### Number Generation
 
-**`lotto.ts`** (`src/utils/lotto.ts`): bias-free Fisher-Yates shuffle using `crypto.getRandomValues`. `getUnbiasedRandom` retries until the value is below the rejection threshold to eliminate modulo bias.
+**`random.ts`** (`src/utils/random.ts`): the bias-free primitives. `getUnbiasedRandom(max)` uses `crypto.getRandomValues` with rejection sampling — retries until the value is below the largest multiple of `max` that fits a `Uint32`, eliminating modulo bias. `unbiasedShuffle(arr, rng?)` is an in-place Fisher-Yates shuffle; `rng` is injectable for deterministic tests and defaults to `getUnbiasedRandom`.
 
-**`GAME_LABELS`**: `['A', 'B', ..., 'J']` constant shared by `GeneratorPanel` and `HistoryPanel` to label each game slot.
+**`lotto.ts`** (`src/utils/lotto.ts`): `generateLottoNumbers()` shuffles a 1–45 pool with `unbiasedShuffle`, takes 6, returns them sorted ascending.
+
+**`pension.ts`** (`src/utils/pension.ts`): `generatePensionNumber()` returns `{ group: 1–5, digits: 6-digit zero-padded string }` via `getUnbiasedRandom`.
+
+**`GAME_LABELS`** (in `lotto.ts`): `['A', 'B', ..., 'J']` constant shared by both lotto and pension panels to label each game slot.
 
 ### Components
 
-**`GameCountSelector`**: constrains game count to 1–10 (enforced via `disabled` props on ± buttons).
+**`Header`**: renders the title and the tab nav (`TabType = 'lotto' | 'pension'`); `App` owns `activeTab` and conditionally renders the matching generator + history panels.
 
-**`generationKey` in `GeneratorPanel`**: incremented on each generate call and used as part of the `LottoTicket` `key` prop — forces React to remount tickets so the ball entrance animation replays.
+**Pension components** (`PensionGeneratorPanel`, `PensionTicket`, `PensionHistoryPanel`): mirror the lotto components for the pension ticket format (group + 6-digit number).
+
+**`GameCountSelector`**: constrains game count to 1–10 (enforced via `disabled` props on ± buttons); shared by both lotto and pension panels.
+
+**`generationKey`** (in each `*GeneratorPanel`): incremented on each generate call and used as part of the ticket `key` prop — forces React to remount tickets so the entrance animation replays.
 
 ### Design System
 
