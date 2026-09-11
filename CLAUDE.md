@@ -14,7 +14,7 @@ npm run format:check # Prettier check (CI)
 npm test             # Vitest watch mode
 npm test -- --run    # single run
 npm test -- src/__tests__/utils/lotto.test.ts  # single file
-npm run bias         # 1M-trial Monte Carlo bias check (scripts/bias-check.ts, requires bun)
+npm run bias         # 10M-trial Monte Carlo bias check (scripts/bias-check.ts, requires bun)
 ```
 
 ## Architecture
@@ -46,6 +46,8 @@ Single-page React 19 + Vite SPA with two tabbed features — Lotto 6/45 and Pens
 **Pension components** (`PensionGeneratorPanel`, `PensionTicket`, `PensionHistoryPanel`): mirror the lotto components for the pension ticket format (group + 6-digit number).
 
 **`HistoryDisclosure`**: shared wrapper for both history panels. History is collapsed by default and only opens on user action — a "기록에 저장됨" notice plus an "이전 기록 N개" trigger (shadcn `Collapsible`) sit right below the generated results; "전체 삭제" shows only while open. Renders nothing when there is no previous history and nothing was just saved.
+
+**`FairnessNotice`**: one-line "every combination is equally likely" claim at the top of `main`, with a collapsed "어떻게 뽑나요?" disclosure explaining the generation method, the bias check, and that odds are not improved. Copy is per lottery (`lottery: TabType`); the trial count and test names it cites must stay in sync with `scripts/bias-check.ts`.
 
 **`GameCountSelector`**: constrains game count to 1–10 (enforced via `disabled` props on ± buttons); shared by both lotto and pension panels.
 
